@@ -17,4 +17,5 @@ Next, I copied  launch-remote-openocd.json from pico-examples/ide/vscode/ to the
 In my case I changed "gdbPath" to "gdbPath" : "arm-none-eabi-gdb", instead of "gdb Multiarch"
 I modified "gdbTarget" to "localhost:3333"
 
+From a terminal, run openocd -f interface/cmsis-dap.cfg -f target/rp2040.cfg -c "adapter speed 5000"
  From there I did a Debug build and launched the project and saw that I have full debug capabilities!
